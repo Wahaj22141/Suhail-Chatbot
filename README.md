@@ -8,7 +8,7 @@ This repository contains two datasets designed to explore and interact with Saud
 Two datasets have been built for the Suhail chatbot. They were collected from **132 reliable sources**.  
 
 ### 1. General Dataset (`DataSet_general_u.csv`)  
-This dataset is general and contains **166 rows and 4 columns** as shown in Table 1:  
+This dataset is general and contains **166 rows and 4 columns** :  
 
 - The **first column** represents the main categories, such as Architecture, Arts, Economy, and more.  
 - The **second column** dives deeper to represent subcategories such as Religious Architecture, Heritage Villages, etc.  
