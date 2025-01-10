@@ -1,5 +1,0 @@
-Flask
-scikit-learn
-pandas
-conda activate chatbot
-/opt/anaconda3/envs/chatbot/bin/python SuhailBot.py
