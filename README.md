@@ -20,7 +20,7 @@ The dataset is **text-based**, with **no missing values or null entries**. It is
 ### Dataset Characteristics:  
 
 - **Total Samples:** 80 (equivalent to the number of rows).  
-- **Memory Usage:** 18.5 KB (lightweight and easy to process).  
+- **Size:** 18.5 KB (lightweight and easy to process).  
 - **Structure:** Provides both general and specific information about Saudi culture.  
 
 This dataset will be processed further in the form of questions with follow-up questions, which will be used to train the model of Suhail Chatbot.
