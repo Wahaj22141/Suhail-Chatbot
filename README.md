@@ -35,6 +35,10 @@ This repository contains two datasets designed to explore Saudi culture. These d
   Suitable for training chatbots, conducting NLP tasks, or building interactive applications about Saudi culture.
 
 ---
+💡 Applications
+📚 Cultural Learning: Analyze and learn about Saudi culture.
+🤖 Chatbot Training: Use the question-based dataset to train conversational AI models.
+📊 EDA and Visualizations: Perform exploratory data analysis or create cultural insights.
 
 ## 🚀 Getting Started  
 
@@ -51,8 +55,3 @@ print(general_data.head())
 # Load Question-Based Dataset
 question_data = pd.read_csv('DataSet_Sohail-Qestions.csv')
 print(question_data.head())
-
-💡 Applications
-📚 Cultural Learning: Analyze and learn about Saudi culture.
-🤖 Chatbot Training: Use the question-based dataset to train conversational AI models.
-📊 EDA and Visualizations: Perform exploratory data analysis or create cultural insights.
