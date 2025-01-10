@@ -52,7 +52,7 @@ This dataset enhances the functionality of SuhailChatbot by using information co
 ### Question-Based Dataset  
 
 | **Column Name**         | **Description**                                                                     | **Example**                                 |
-|-------------------------|-------------------------------------------------------------------------------------|---------------|---------------------------------------------|
+|-------------------------|-------------------------------------------------------------------------------------|---------------------------------------------|
 | **Category**            | The main subject that defines the type of question.                                 | Food                                        |
 | **User Query**          | Possible user queries about Saudi culture.                                          | "What are the most popular traditional Saudi dishes?" |
 | **Response**            | Initial response to the user's query.                                               | "Some of the most popular traditional Saudi dishes include Kabsa, Mandi, and Jareesh." |
