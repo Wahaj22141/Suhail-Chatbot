@@ -1,15 +1,45 @@
-# Suhail Chatbot Datasets  
-
+```markdown
+# 🌟 Suhail Chatbot Datasets  
 This repository contains two datasets designed to explore and interact with Saudi culture. These datasets are tailored for educational purposes, cultural studies, and AI-based projects like training SuhailChatbot.
 
 ---
 
 ## 📂 Dataset Overview  
 
-### 1. General Dataset (`DataSet_general_u.csv`)  
-This dataset provides a comprehensive overview of Saudi cultural topics by classifying information under broad categories and subcategories, with detailed descriptions and credible sources.  
+Two datasets have been built for the Suhail chatbot. They were collected from **132 reliable sources**.  
 
-#### 🗂 Feature Descriptions  
+### 1. General Dataset (`DataSet_general_u.csv`)  
+This dataset is general and contains **166 rows and 4 columns** as shown in Table 1:  
+
+- The **first column** represents the main categories, such as Architecture, Arts, Economy, and more.  
+- The **second column** dives deeper to represent subcategories such as Religious Architecture, Heritage Villages, etc.  
+- The **third column** provides pre-processed descriptions related to the different subcategories.  
+- The **fourth column** contains the sources from where the data were collected, providing a reference if it is necessary to revisit the original information.  
+
+The dataset is **text-based**, with **no missing values or null entries**. It is **well-structured**, meaning all fields are complete, ensuring a clean dataset for training purposes.  
+
+### Dataset Characteristics:  
+
+- **Total Samples:** 80 (equivalent to the number of rows).  
+- **Memory Usage:** 18.5 KB (lightweight and easy to process).  
+- **Structure:** Provides both general and specific information about Saudi culture.  
+
+This dataset will be processed further in the form of questions with follow-up questions, which will be used to train the model of Suhail Chatbot.
+
+---
+
+### 2. Question-Based Dataset (`DataSet_Sohail-Qestions.csv`)  
+This dataset enhances the functionality of SuhailChatbot by using information collected from reliable sources about Saudi cultural topics. It contains **16 columns** to facilitate detailed interactions, such as:  
+
+- User queries about Saudi culture.  
+- Initial responses, key entities, and follow-up questions to dive deeper into the topic.  
+- Structured responses and additional insights to improve conversational quality.  
+
+---
+
+## 📊 Feature Descriptions  
+
+### General Dataset  
 
 | **Feature Name** | **Data Type** | **Description** | **Example** |
 |------------------|---------------|-----------------|-------------|
@@ -18,37 +48,9 @@ This dataset provides a comprehensive overview of Saudi cultural topics by class
 | **Description** | Object | Pre-processed text that describes each subcategory and can be turned into questions and follow-ups for SuhailChatbot. | "Kabsa is a popular Saudi dish made of rice…" |
 | **Source** | Object | Origin of the information for credibility and traceability, with references to authoritative entities. | Ministry of Culture, Saudi Tourism, Saudi Historical Society |
 
-#### 📊 Data Insights  
-
-| **Main Category**       | **Number of Entries** | **Brief Description**                                                   |
-|-------------------------|-----------------------|-------------------------------------------------------------------------|
-| Architecture            | 5                     | Architectural styles such as religious and historical architecture.    |
-| Arts                    | 1                     | Details aspects of the arts.                                           |
-| Crafts and Handicraft   | 16                    | Traditional crafts and handicraft practices.                           |
-| Cultural Etiquette      | 5                     | Traditional customs and etiquette.                                     |
-| Economy                 | 8                     | Economic sectors, growth, and developments.                           |
-| Education               | 16                    | Educational systems and institutions within Saudi Arabia.              |
-| Environment             | 5                     | Natural resources and ecosystems of Saudi Arabia.                      |
-| Festivals               | 8                     | Traditional celebrations that contribute to Saudi’s cultural history.  |
-| Folklore                | 13                    | Traditional stories, myths, and folklore.                              |
-| Food                    | 1                     | Popular dishes in Saudi Arabia.                                        |
-| Geography               | 9                     | Geographical features and landscapes.                                  |
-| History                 | 1                     | Cultural heritage and historical events.                               |
-| Landmarks               | 1                     | Notable and iconic landmarks.                                          |
-| Language                | 1                     | Information on the Arabic language.                                    |
-| Literature              | 9                     | Traditional and modern Saudi literature, including notable authors.    |
-| Modern Culture          | 21                    | Current cultural practices and modern lifestyle trends.                |
-| Music                   | 1                     | Role of music in Saudi culture.                                        |
-| Music and Dance         | 4                     | Information on music and dance forms.                                  |
-| Religion                | 2                     | Religious practices, beliefs, and aspects of Islam.                    |
-| Sports                  | 17                    | Popular sports in Saudi Arabia.                                        |
-
 ---
 
-### 2. Question-Based Dataset (`DataSet_Sohail-Qestions.csv`)  
-This dataset enhances the functionality of SuhailChatbot by using information collected from reliable sources about Saudi cultural topics. It contains multiple user queries, responses, and follow-up questions to facilitate deeper interactions.  
-
-#### 🗂 Feature Descriptions  
+### Question-Based Dataset  
 
 | **Column Name**         | **Description**                                                                     | **Data Type** | **Example**                                 |
 |-------------------------|-------------------------------------------------------------------------------------|---------------|---------------------------------------------|
@@ -62,18 +64,6 @@ This dataset enhances the functionality of SuhailChatbot by using information co
 | **Second Follow-up Question** | The second follow-up question for deeper inquiry.                            | Object        | "How is Mandi different from Kabsa?"       |
 | **Response**            | Response to the Second Follow-up Question.                                         | Object        | "Mandi is cooked in a tandoor-style oven, while Kabsa is not." |
 | **Entities**            | Key entities mentioned in the second follow-up response.                           | Object        | "Mandi", "Tandoor"                         |
-| **Third Follow-up Question** | The third follow-up question for further exploration.                         | Object        | "What is the significance of Jareesh in Saudi cuisine?" |
-| **Response**            | Response to the Third Follow-up Question.                                          | Object        | "Jareesh is a staple dish made from crushed wheat." |
-| **Entities**            | Key entities mentioned in the third follow-up response.                            | Object        | "Jareesh", "Wheat"                         |
-| **Fourth Follow-up Question** | The fourth follow-up question for more details.                              | Object        | "Are there regional variations of these dishes?" |
-| **Response**            | Response to the Fourth Follow-up Question.                                         | Object        | "Yes, dishes like Kabsa have variations across regions." |
-| **Entities**            | Key entities mentioned in the fourth follow-up response.                           | Object        | "Regional Variations"                      |
-
-#### 📊 Data Insights  
-
-- **Rows:** 80  
-- **Columns:** 16  
-- **Purpose:** Develops direct questions and follow-ups to provide a deeper understanding of topics for SuhailChatbot users.  
 
 ---
 
@@ -87,13 +77,34 @@ This dataset enhances the functionality of SuhailChatbot by using information co
 
 ## 🚀 Usage  
 
-Load the datasets  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-repo/saudi-culture-datasets.git
+   cd saudi-culture-datasets
+   ```
+2. Load the datasets:  
 
-  
-import pandas as pd
+   ```python
+   import pandas as pd
 
-# Load General Dataset
-general_data = pd.read_csv('DataSet_general_u.csv')
+   # Load General Dataset
+   general_data = pd.read_csv('DataSet_general_u.csv')
 
-# Load Question-Based Dataset
-question_data = pd.read_csv('DataSet_Sohail-Qestions.csv')
+   # Load Question-Based Dataset
+   question_data = pd.read_csv('DataSet_Sohail-Qestions.csv')
+   ```
+3. Use the data for analysis, training, or applications.  
+
+---
+
+## 🤝 Contributions  
+
+Contributions are welcome! Help us expand the dataset, improve the structure, or suggest innovative use cases.  
+
+---
+
+## 📜 License  
+
+This project is licensed under the **MIT License**.  
+
+---
