@@ -51,18 +51,18 @@ This dataset enhances the functionality of SuhailChatbot by using information co
 
 ### Question-Based Dataset  
 
-| **Column Name**         | **Description**                                                                     | **Data Type** | **Example**                                 |
+| **Column Name**         | **Description**                                                                     | **Example**                                 |
 |-------------------------|-------------------------------------------------------------------------------------|---------------|---------------------------------------------|
-| **Category**            | The main subject that defines the type of question.                                | Object        | Food                                        |
-| **User Query**          | Possible user queries about Saudi culture.                                         | Object        | "What are the most popular traditional Saudi dishes?" |
-| **Response**            | Initial response to the user's query.                                              | Object        | "Some of the most popular traditional Saudi dishes include Kabsa, Mandi, and Jareesh." |
-| **Entities**            | Key terms extracted from the response to refine chatbot responses.                 | Object        | "Kabsa", "Mandi", "Jareesh"                |
+| **Category**            | The main subject that defines the type of question.                                 | Food                                        |
+| **User Query**          | Possible user queries about Saudi culture.                                          | "What are the most popular traditional Saudi dishes?" |
+| **Response**            | Initial response to the user's query.                                               | "Some of the most popular traditional Saudi dishes include Kabsa, Mandi, and Jareesh." |
+| **Entities**            | Key terms extracted from the response to refine chatbot responses.                  | "Kabsa", "Mandi", "Jareesh"                |
 | **First Follow-up Question** | The first possible follow-up question a user might ask after receiving the initial response. | Object | "What are the key ingredients in Kabsa?"    |
-| **Response**            | The first response from SuhailChatbot to the First Follow-up Question.             | Object        | "Kabsa includes rice, meat, vegetables, and spices." |
-| **Entities**            | Key entities mentioned in the first follow-up response.                            | Object        | "Rice", "Meat", "Spices"                   |
-| **Second Follow-up Question** | The second follow-up question for deeper inquiry.                            | Object        | "How is Mandi different from Kabsa?"       |
-| **Response**            | Response to the Second Follow-up Question.                                         | Object        | "Mandi is cooked in a tandoor-style oven, while Kabsa is not." |
-| **Entities**            | Key entities mentioned in the second follow-up response.                           | Object        | "Mandi", "Tandoor"                         |
+| **Response**            | The first response from SuhailChatbot to the First Follow-up Question.              | "Kabsa includes rice, meat, vegetables, and spices." |
+| **Entities**            | Key entities mentioned in the first follow-up response.                             | "Rice", "Meat", "Spices"                   |
+| **Second Follow-up Question** | The second follow-up question for deeper inquiry.                             | "How is Mandi different from Kabsa?"       |
+| **Response**            | Response to the Second Follow-up Question.                                         || "Mandi is cooked in a tandoor-style oven, while Kabsa is not." |
+| **Entities**            | Key entities mentioned in the second follow-up response.                            | "Mandi", "Tandoor"                         |
 
 ---
 
