@@ -35,7 +35,8 @@ This repository contains two datasets designed to explore Saudi culture. These d
   Suitable for training chatbots, conducting NLP tasks, or building interactive applications about Saudi culture.
 
 ---
-💡 Applications
+**💡Applications:**
+
 📚 Cultural Learning: Analyze and learn about Saudi culture.
 🤖 Chatbot Training: Use the question-based dataset to train conversational AI models.
 📊 EDA and Visualizations: Perform exploratory data analysis or create cultural insights.
