@@ -1,58 +1,84 @@
-SuhailChatbot Datasets 🌟
-This repository contains two datasets designed to explore Saudi culture. These datasets are suitable for educational purposes, data analysis, and AI-based projects such as chatbot training.
+# 🌍 Saudi Culture Datasets  
+
+This repository contains two datasets designed to explore and interact with Saudi culture. These datasets can be utilized for educational purposes, cultural studies, and AI-based projects such as chatbot training.
 
 ---
 
-## 📂 Dataset Details  
+## 📂 Dataset Overview  
 
 ### 1. General Dataset (`DataSet_general_u.csv`)  
-- **📖 Description:**  
-  This dataset provides an overview of Saudi culture, categorized into topics like Architecture, History, and Traditions. Each row includes a main category, subcategory, a detailed description, and the source of information.  
-- **📊 Structure:**  
-  - **Rows:** 165  
-  - **Columns:** 4  
-  - **Column Details:**  
-    1. `Category`: Broad topic (e.g., Architecture, Arts).  
-    2. `Subcategory`: Specific classification (e.g., Religious Architecture, Heritage Villages).  
-    3. `Description`: Detailed explanation of the subcategory.  
-    4. `Source`: Source of the information.  
-- **📌 Usage:**  
-  Ideal for cultural studies, data visualization, or creating informative applications about Saudi culture.
+This dataset provides a comprehensive overview of Saudi cultural topics. It categorizes information under broad topics and subcategories, with detailed descriptions and credible sources.
 
-### 2. Question-Based Dataset (`DataSet_Sohail-Qestions.csv`)  
-- **📖 Description:**  
-  This dataset is designed for interactive learning and conversational AI applications. It contains primary user queries about Saudi culture, follow-up questions, responses, and extracted entities to support multi-turn conversations.  
-- **📊 Structure:**  
-  - **Rows:** 80  
-  - **Columns:** 16  
-  - **Column Details:**  
-    1. `Category`: Main cultural topic (e.g., Food, Landmarks).  
-    2. `User Query`: Primary question asked by the user.  
-    3. `Response`: The response to the primary query.  
-    4. `Entities`: Key terms extracted from the response.  
-    5. Additional columns for follow-up questions, responses, and entities (up to 4 levels).  
-- **📌 Usage:**  
-  Suitable for training chatbots, conducting NLP tasks, or building interactive applications about Saudi culture.
+#### 🗂 Feature Descriptions  
+
+| **Feature Name**       | **Data Type** | **Description**                                                                                 | **Example**                              |
+|-------------------------|---------------|-------------------------------------------------------------------------------------------------|------------------------------------------|
+| **Main Category**       | Object        | Broad category under which each entry is classified, covering high-level Saudi cultural topics. | Architecture, Arts, Economy, etc.        |
+| **Subcategory**         | Object        | Specific classification within each main category.                                             | Religious Architecture, Heritage Villages |
+| **Description**         | Object        | Pre-processed text describing each subcategory.                                                | "Kabsa is a popular Saudi dish..."       |
+| **Source**              | Object        | Origin of the information for credibility and traceability.                                     | Ministry of Culture, Saudi Tourism       |
+
+#### 📊 Data Insights  
+
+| **Main Category**       | **Number of Entries** | **Brief Description**                                                   |
+|-------------------------|-----------------------|-------------------------------------------------------------------------|
+| Architecture            | 5                     | Covers architectural styles, including religious and historical sites. |
+| Arts                    | 1                     | Details aspects of the arts.                                           |
+| Crafts and Handicraft   | 16                    | Highlights traditional crafts and practices.                           |
+| Cultural Etiquette      | 5                     | Focuses on customs and traditions.                                     |
+| Economy                 | 8                     | Discusses economic sectors and developments.                           |
+| Education               | 16                    | Covers the educational system and institutions.                        |
+| Environment             | 5                     | Describes natural resources and ecosystems.                            |
+| Festivals               | 8                     | Showcases traditional celebrations.                                    |
+| Folklore                | 13                    | Features stories, myths, and folklore.                                 |
+| Food                    | 1                     | Discusses popular Saudi dishes.                                        |
+| Geography               | 9                     | Describes geographical features and landscapes.                        |
+| History                 | 1                     | Covers cultural heritage and historical events.                        |
+| Landmarks               | 1                     | Highlights notable landmarks.                                          |
+| Language                | 1                     | Explores the Arabic language.                                          |
+| Literature              | 9                     | Details traditional and modern Saudi literature.                       |
+| Modern Culture          | 21                    | Discusses current cultural practices and lifestyles.                   |
+| Music                   | 1                     | Explains the role of music in Saudi culture.                           |
+| Music and Dance         | 4                     | Focuses on music and dance forms.                                      |
+| Religion                | 2                     | Describes religious practices and beliefs.                             |
+| Sports                  | 17                    | Highlights popular sports in Saudi Arabia.                             |
 
 ---
-**💡Applications:**
 
-📚 Cultural Learning: Analyze and learn about Saudi culture.
-🤖 Chatbot Training: Use the question-based dataset to train conversational AI models.
-📊 EDA and Visualizations: Perform exploratory data analysis or create cultural insights.
+### 2. Question-Based Dataset (`DataSet_Sohail-Qestions.csv`)  
+This dataset is designed for interactive learning and AI applications. It contains primary user queries, follow-up questions, responses, and extracted entities to support multi-turn conversations.
 
-## 🚀 Getting Started  
+#### 🗂 Feature Descriptions  
 
-1. Clone the repository or download the dataset files.  
-2. Use Python or any other tool to load and explore the data. Example code in Python:  
+| **Column Name**         | **Description**                                                                     | **Data Type** | **Example**                                 |
+|-------------------------|-------------------------------------------------------------------------------------|---------------|---------------------------------------------|
+| **Category**            | Main subject defining the type of question.                                        | Object        | Food                                        |
+| **User Query**          | Primary user query about Saudi culture.                                            | Object        | "What are the most popular Saudi dishes?"   |
+| **Response**            | Initial response to the user's query.                                              | Object        | "Popular dishes include Kabsa, Mandi, etc." |
+| **Entities**            | Key terms extracted from the response.                                             | Object        | "Kabsa", "Mandi"                           |
+| **Follow-up Questions** | Multiple levels of follow-up questions and responses for deeper exploration.        | Object        | "What are the key ingredients in Kabsa?"    |
 
-```python
-import pandas as pd
+#### 📊 Data Insights  
 
-# Load General Dataset
-general_data = pd.read_csv('DataSet_general_u.csv')
-print(general_data.head())
+- **Rows:** 80  
+- **Columns:** 16  
+- **Memory Usage:** 27.2 KB  
+- **No Missing Values:** Clean and ready for use.  
+- **Purpose:** Enhances SuhailChatbot by supporting multi-turn conversations for in-depth learning.  
 
-# Load Question-Based Dataset
-question_data = pd.read_csv('DataSet_Sohail-Qestions.csv')
-print(question_data.head())
+---
+
+## 💡 Applications  
+
+1. **📚 Educational Tools:** Explore Saudi cultural topics for learning and analysis.  
+2. **🤖 AI Development:** Train conversational AI models for interactive cultural learning.  
+3. **📊 Data Analysis:** Perform exploratory data analysis (EDA) or visualization on cultural trends.  
+
+---
+
+## 🚀 Usage  
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-repo/saudi-culture-datasets.git
+   cd saudi-culture-datasets
