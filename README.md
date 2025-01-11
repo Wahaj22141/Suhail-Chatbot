@@ -57,7 +57,7 @@ This dataset enhances the functionality of SuhailChatbot by using information co
 | **User Query**          | Possible user queries about Saudi culture.                                          | "What are the most popular traditional Saudi dishes?" |
 | **Response**            | Initial response to the user's query.                                               | "Some of the most popular traditional Saudi dishes include Kabsa, Mandi, and Jareesh." |
 | **Entities**            | Key terms extracted from the response to refine chatbot responses.                  | "Kabsa", "Mandi", "Jareesh"                |
-| **First Follow-up Question** | The first possible follow-up question a user might ask after receiving the initial response. | Object | "What are the key ingredients in Kabsa?"    |
+| **First Follow-up Question** | The first possible follow-up question a user might ask after receiving the initial response. | "What are the key ingredients in Kabsa?"    |
 | **Response**            | The first response from SuhailChatbot to the First Follow-up Question.              | "Kabsa includes rice, meat, vegetables, and spices." |
 | **Entities**            | Key entities mentioned in the first follow-up response.                             | "Rice", "Meat", "Spices"                   |
 | **Second Follow-up Question** | The second follow-up question for deeper inquiry.                             | "How is Mandi different from Kabsa?"       |
