@@ -61,7 +61,7 @@ This dataset enhances the functionality of SuhailChatbot by using information co
 | **Response**            | The first response from SuhailChatbot to the First Follow-up Question.              | "Kabsa includes rice, meat, vegetables, and spices." |
 | **Entities**            | Key entities mentioned in the first follow-up response.                             | "Rice", "Meat", "Spices"                   |
 | **Second Follow-up Question** | The second follow-up question for deeper inquiry.                             | "How is Mandi different from Kabsa?"       |
-| **Response**            | Response to the Second Follow-up Question.                                         || "Mandi is cooked in a tandoor-style oven, while Kabsa is not." |
+| **Response**            | Response to the Second Follow-up Question.                                          | "Mandi is cooked in a tandoor-style oven, while Kabsa is not." |
 | **Entities**            | Key entities mentioned in the second follow-up response.                            | "Mandi", "Tandoor"                         |
 
 ---
